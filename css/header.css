@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.head_nav{
+    height: 2.5rem;
+    width: 100%;
+}
+.head_index{
+    line-height: 2.5rem;
+}
+.layui-nav .layui-nav-item{
+    line-height: 2.5rem;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+    background-color: #0d8df9;
+    height:0.25rem;
+}
+.layui-nav-child{
+    top:2.813rem;
+}
+.head_sec{height: 8.75rem; padding-top:5rem;}
+.head_sec .mallLogo{margin-left: 2.375rem; float: left;}
+.head_sec .mallLogo .logo{
+    width: 12.125rem;
+    height: 4.25rem;}
+.head_sec .mallSearch{ width:auto; padding-top: 0.5rem; position: relative;}
+.head_sec .mallSearch form{height: 2.375rem;float: left; line-height: 2.375rem; border-width: 0.063rem 0 0.063rem 0.063rem; border: solid #0d8df9; position: relative;}
+.head_sec .mallSearch input{height: 2.375rem; line-height: 2.375rem; width: 27.25rem; float: left; border:none; position: relative; z-index: 2; background: none;}
+.head_sec .mallSearch button{width: 3.625rem; height: 2.375rem; line-height: 2.375rem; float: left; background: #0d8df9; border-radius:0;}
+.head_sec .or_text{
+    height:2.5rem;
+    line-height: 2.5rem;
+    padding:0 3.125rem;
+}
+.head_sec .search_list{
+    font-size:0;
+}
+.head_sec .search_list li{
+    display: inline-block;
+    font-size:0.75rem;
+    color: #0d8df9;
+    margin-right: 0.625rem;
+    min-width:2.5rem;
+    height:1.5rem;
+    padding:0 0.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.head_sec .search_list li.active,.head_sec .search_list li:hover{
+    background: #0d8df9;
+    color: #ffffff;
+}
+.head_sec .search_tips{
+    height:2rem;
+    font-size:0;
+    width:38.75rem;
+}
+.head_sec .search_tips li{
+    font-size:0.75rem;
+    color: #999999;
+    display: inline-block;
+    width:3.75rem;
+    height: 2rem;
+    line-height: 2rem;
+}
