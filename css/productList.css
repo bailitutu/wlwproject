@@ -1,0 +1,210 @@
+@charset "UTF-8";
+.product_nav{
+    padding:1.875rem 0;
+}
+.classify_section{
+    padding-bottom: 1.875rem;
+}
+.classify_section .classify_head{
+    padding:1.25rem 0.875rem;
+    border-bottom: 0.063rem solid #e6e6e6;
+    overflow: hidden;
+}
+.classify_head>p,.classify_head>span{
+    height: 1.375rem;
+    line-height: 1.375rem;
+}
+.classify_head ul{
+    overflow: hidden;
+}
+.classify_head ul li{
+    height: 1.375rem;
+    line-height: 1.375rem;
+    margin: 0 0.5rem;
+    font-size: 0.75rem;
+    padding: 0 1.25rem 0 0.625rem;
+    float: left;
+    border:0.063rem solid #0d8df9;
+    color: #0d8df9;
+    position: relative;
+}
+.classify_head ul li span.del_icon{
+    position: absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #0d8df9;
+    font-size: 0.75rem;
+}
+
+/*分类选择*/
+.classify_cell{
+    margin-top: 1rem;
+    margin-left:0.875rem;
+    margin-left: 1rem;
+    min-height:5.063rem;
+}
+.classify_cell>p{
+    width: 3.75rem;
+    height:1.875rem;
+    line-height: 1.875rem;
+    margin-right: 2.313rem;
+}
+.classify_cell .class_list{
+    float: left;
+    width: 56.25rem;
+    overflow: hidden;
+    border-bottom: 0.063rem solid #f0f0f0;
+}
+.class_list li{
+    width:6.25rem;
+    padding-left: 0.625rem;
+}
+.class_list li,.class_list_form li{
+    margin-right: 1.875rem;
+    line-height: 1.875rem;
+    height: 1.875rem;
+    color: #666666;
+    margin-bottom: 0.875rem;
+    float: left;
+}
+.class_list_form{
+    float: left;
+    min-height:5rem;
+    width: 56.25rem;
+    border-bottom: 0.063rem solid #f0f0f0;
+}
+.layui-form-item .layui-input-inline{
+    width:6.25rem;
+
+}
+.layui-input-inline .layui-input{
+    border:none;
+}
+
+/*过滤*/
+
+.product_filter{
+    background: #ccc;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    margin-top: 1.875rem;
+}
+.product_filter .filter_list{
+    overflow: hidden;
+    margin-left: 1.5rem;
+}
+.product_filter .filter_list li{
+    margin-right: 3.125rem;
+    padding:0 0.25rem;
+    float: left;
+}
+.price_input_sec .price_input_cell {
+    height:1.625rem;
+    line-height: 1.625rem;
+    margin-top: 0.438rem;
+    padding: 0;
+    width: 4.125rem;
+}
+
+.price_input_sec .price_input_cell .price_input{
+    width: 2.5rem;
+    border:none;
+    font-size:0.75rem;
+}
+
+/*列表*/
+.product_list_section .product_list_item{
+    width: 58.75rem;
+    float: left;
+    margin-top: 1.25rem;
+}
+.product_list .layui-col-md3{
+    height:18.125rem;
+    width: 13.75rem;
+    background: #fff;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+.product_list .layui-col-md3:nth-of-type(4n){
+    margin-right: 0;
+}
+.product_list .layui-col-md3 img{
+    width: 13.75rem;
+    height: 13.75rem;
+}
+.product_list .layui-col-md3 .product_name,.product_list .layui-col-md3 .product_tip{
+    width:7.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.product_list .layui-col-md3 .product_tip{
+    width: 10rem;
+}
+.product_list .layui-col-md3 .chat_icon{
+    width: 1.875rem;
+    height: 1.875rem;
+    float: right;
+    background: url("../imgs/product_product_icon_connect.png") no-repeat top center;
+    background-size:1.375rem 1.063rem;
+}
+.product_list .layui-col-md3 .collect_icon{
+    display: none;
+    width: 1rem;
+    height: 0.938rem;
+    position: absolute;
+    right:0.625rem;
+    top:12.5rem;
+    background: url("../imgs/product_product_icon_collect.png") no-repeat top center;
+    background-size:1rem 0.938rem;
+}
+.product_list .layui-col-md3:hover .collect_icon{
+    display: block;
+}
+
+
+/*调整分页*/
+.list_laypage{
+    margin-top: 1.875rem;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background-color: #0d8df9;
+}
+
+/*右侧广告*/
+.product_list_section .product_adv{
+    float: right;
+    width: 15rem;
+    margin-top: 1.25rem;
+}
+
+.product_adv>a{
+    margin-bottom: 1rem;
+    width: 15rem;
+    display: block;
+}
+
+.product_adv>.list_title{
+    height:1.875rem;
+    line-height: 1.875rem;
+}
+.commend_list{
+    width: 13.75rem;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 0 0.625rem 1.25rem;
+}
+.commend_list li{
+    border-bottom: 0.063rem solid #e6e6e6;
+    padding: 0.625rem 0.063rem ;
+}
+.p_name{
+    width: 8.125rem;
+    display: inline-block;
+}

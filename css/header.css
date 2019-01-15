@@ -61,3 +61,12 @@
     height: 2rem;
     line-height: 2rem;
 }
+.send_work.layui-nav{
+    border:2px solid #0d8df9;
+}
+.send_work.layui-nav .layui-nav-item a {
+    color: #0d8df9;
+}
+.layui-nav.send_work .layui-nav-more{
+    border-color:#0d8df9 transparent transparent transparent;
+}

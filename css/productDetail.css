@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.section{
+    overflow: hidden;
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+.product_info_section{
+    width:58.75rem;
+
+}
+
+.product_info{
+    height: 28.75rem;
+    width: 100%;
+    background: #fff;
+}
+
+
+.product_pape{width:18.75rem;height:18.75rem;margin: 3.125rem 0 1.25rem 1.875rem;}
+.jqzoom{float:left;border:none;position:relative;padding:0rem;cursor:pointer;margin:0rem;display:block;}
+.jqzoom img{width:18.75rem;height:18.75rem;}
+.zoomdiv{z-index:100;position:absolute;top:0rem;left:0rem;width:12.5rem;height:12.5rem;background:#ffffff;border:0.063rem solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0rem;left:0rem;width:1.25rem;height:1.25rem;border:0.063rem solid #aaa;background: rgba(212,212,212,0.5);}
+
+/*图片小图预览列表*/
+.spec-preview{width:18.75rem;height:18.75rem;border:0.063rem solid #DFDFDF;}
+.spec-scroll{clear:both;margin-top:0.938rem;width:18.75rem;}
+.spec-scroll .prev{float:left;}
+.spec-scroll .next{float:right;}
+.spec-scroll .prev,.spec-scroll .next{display:block;font-family:"宋体";text-align:center;width:0.625rem;height:3.125rem; line-height:3.125rem;border:0.063rem solid #f0f0f0;background:#ffffff;cursor:pointer;text-decoration:none;}
+.spec-scroll .items{float:left;position:relative;width:16.875rem;height:3.25rem;overflow:hidden;}
+.spec-scroll .items ul{position:absolute;width:62499.938rem;height:3.25rem;}
+.spec-scroll .items ul li{float:left;width:4.25rem;text-align:center;}
+.spec-scroll .items ul li img{border:0.063rem solid #CCC;margin:0 0.375rem;width:3.125rem;height:3.125rem;}
+.spec-scroll .items ul li img:hover,.spec-scroll .items ul li img.xz{border-color: #0d8df9;}
+
+.product_detail{
+    margin-left: 1.875rem;
+    margin-top: 3.125rem;
+    height: 100%;
+    width: 35.625rem;
+    height:18.75rem;
+    position: relative;
+}
+
+.product_detail .p_tips{
+    white-space: normal;
+    word-break: break-all;
+}
+.product_detail .p_tips{
+    margin-top: 1.25rem;
+}
+.product_detail .price{
+    margin-top: 3.125rem;
+}
+
+.product_detail .btn_item{
+    position: absolute;
+    bottom:0;
+}
+.collect_btn{
+    background: #fff;
+    color: #333;
+    width: auto;
+}
+.collect_btn:hover{
+    color: #333;
+}
+
+.product_detail .collect_icon{
+    vertical-align: middle !important;
+    width: 1rem;
+    height: 0.938rem;
+    display: inline-block;
+    background: url("../imgs/productdetail_collect.png") no-repeat center;
+    background-size:1rem 0.938rem;
+}
+
+.product_detail .collect_icon.active{
+    background: url("../imgs/product_product_icon_collect.png") no-repeat center;
+    background-size:1rem 0.938rem;
+}
+/*商品详情*/
+.product_content{
+    margin-top: 1.25rem;
+    overflow: hidden;
+    background: #ffffff;
+    padding:1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.product_content p{
+    margin-top: 0.625rem;
+    line-height: 1.5rem;
+}
+.product_content img{
+    max-width:52.5rem;
+    margin-top: 1.25rem;
+}
+
+/*右侧*/
+.product_info_right{
+    width: 15rem;
+    height:62.5rem;
+}
+.product_info_right .product_adv {
+    width: 15rem;
+    background: #fff;
+    overflow: hidden;
+}
+.btn-box{
+    height: 3.75rem;
+    margin:0 1.875rem;
+    background: #fff;
+
+}
+.btn-box button{
+    width: 4.375rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    background: #ccc;
+    color: #fff;
+}
+.product_info_right .list_title{
+    height:1.875rem;
+    line-height: 1.875rem;
+    margin-top: 1.25rem;
+
+}
+
+.commend_list {
+    width: 15rem;
+    overflow: hidden;
+    background: #fff;
+}
+.commend_list li{
+    margin: 0 0.875rem;
+    padding:1.125rem 0;
+    overflow: hidden;
+    border-bottom: 0.063rem solid #f0f0f0;
+}
+.commend_list li:last-child{
+    border-bottom: none;
+}
+.commend_list li img{
+    width: 3.75rem;
+    height: 3.75rem;
+    float: left;
+}
+
+.commend_list li .p_info {
+    width: 8.75rem;
+    margin-left: 0.75rem;
+    float: left;
+    height: 3.75rem;
+    position: relative;
+}
+.commend_list li .p_info p{
+    position: absolute;
+    bottom:0;
+}
