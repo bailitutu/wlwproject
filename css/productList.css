@@ -63,6 +63,16 @@
     width:6.25rem;
     padding-left: 0.625rem;
 }
+.class_list li>span{
+    padding:2px 10px;
+    height:18px;
+    display: inline-block;
+    line-height: 18px;
+}
+.class_list li>span.active{
+    border:1px solid #0d8df9;
+    color: #0d8df9;
+}
 .class_list li,.class_list_form li{
     margin-right: 1.875rem;
     line-height: 1.875rem;

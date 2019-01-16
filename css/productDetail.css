@@ -160,3 +160,30 @@
     position: absolute;
     bottom:0;
 }
+
+/*方案等推荐*/
+
+.commend_list2 {
+    width: 15rem;
+    overflow: hidden;
+    background: #fff;
+}
+.commend_list2 li{
+    margin: 0 0.875rem;
+    overflow: hidden;
+    border-bottom: 0.063rem solid #f0f0f0;
+}
+.commend_list li:last-child{
+    border-bottom: none;
+}
+
+.commend_list2 li .p_info {
+    width:13.25rem;
+    height: 3.125rem;
+    position: relative;
+    line-height: 3.125rem;
+}
+.commend_list2 li .p_info p{
+    text-align: right;
+    width:3.75rem;
+}
