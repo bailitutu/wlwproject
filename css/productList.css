@@ -48,8 +48,9 @@
     min-height:5.063rem;
 }
 .classify_cell>p{
-    width: 3.75rem;
+    width: 4rem;
     height:1.875rem;
+    font-size:1rem;
     line-height: 1.875rem;
     margin-right: 2.313rem;
 }

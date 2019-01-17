@@ -95,6 +95,9 @@ a:visited{
 .bg-nav{
     background: #323f49;
 }
+.bg-red{
+    background: #f01515;
+}
 /*边距*/
 .mt-12{
     margin-top: 0.75rem;
@@ -157,7 +160,14 @@ a:visited{
     white-space: nowrap;
     text-overflow:ellipsis;
 }
-
+.two_row{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 .full{
     width: 100%;
     height: 100%;

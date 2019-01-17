@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>求购</title>
+    <title>方案</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
@@ -11,7 +11,7 @@
     <script src="../../lib/script/html5shiv.min.js"></script>
     <link rel="stylesheet" href="../../css/productList.css">
     <style>
-        .product_list .purchase_list {
+        .product_list .plan_list {
             width: 58.75rem;
             padding:0 1.875rem;
             -webkit-box-sizing: border-box;
@@ -19,16 +19,37 @@
             box-sizing: border-box;
             background: #ffffff;
         }
-        .product_list .purchase_list li{
-            padding:1.5rem 0;
+        .product_list .plan_list li{
+            height:6.875rem;
+            padding:1.875rem 0;
             border-bottom: 0.063rem solid #e6e6e6;
         }
-        .purchase_info{
-            width: 100%;
+        .product_list .plan_list li:last-child{
+            border-bottom: none;
+        }
+        .plan_img{
+            width:10rem;
+            height:6.875rem;
+        }
+        .plan_detail{
+            width: 42.5rem;
+            height:6.875rem;
+            position: relative;
+        }
+        .plan_intro{
+            position: absolute;
+            bottom:-0.125rem;
+            left: 0;
+            width: 31.25rem;
+            height:3rem;
+            line-height: 1.5rem;
+        }
+        .plan_info{
+            width: 42.5rem;
             height:1.875rem;
             line-height: 1.875rem;
         }
-        .purchase_info .icon_collect{
+        .plan_info .icon_collect{
             width:1.875rem;
             height:1.875rem;
             vertical-align: middle;
@@ -36,9 +57,32 @@
             background-size:1.188rem 1.063rem;
             margin-left: 1.25rem;
         }
-        .purchase_info .icon_collect.active{
+        .plan_info .icon_collect.active{
             background: url("../../imgs/purchase_product_icon_collect.png") no-repeat center center;
             background-size:1.188rem 1.063rem;
+        }
+
+        .plan_commend_list{
+            width: 13.75rem;
+            overflow: hidden;
+            background: #ffffff;
+            padding: 0 0.625rem 1.25rem;
+        }
+        .plan_commend_list li{
+            padding: 0 0.063rem ;
+            height:2.75rem;
+        }
+        .plan_com_img{
+            width:3.125rem;
+            height:2.75rem;
+            margin-right: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        .plan_com_detail{
+            margin-top: 0.75rem;
+            width:8.75rem;
+            height:3.375rem;
+            border-bottom: 0.063rem solid #e6e6e6;
         }
 
     </style>
@@ -403,123 +447,106 @@
 
     <div class="product_list_item">
         <div class="product_list">
-            <ul class="purchase_list">
+            <ul class="plan_list">
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect active"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
-
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
-
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
-
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
-
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
                 </li>
-
                 <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
-
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
                     </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
-
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
-                    </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
-
-
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
-                    </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
-
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
-                    </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
-
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
-                    </div>
-                    <p class="fs-14 c-money ">￥2000</p>
                 </li>
 
-                <li>
-                    <div class="purchase_info" >
-                        <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
-                        <span class="fl icon_collect"></span>
-                        <button class=" fr layui-btn layui-btn-sm bg-main" > 立即沟通</button>
-                    </div>
-                    <p class="fs-14 c-money ">￥2000</p>
-                </li>
 
 
             </ul>
@@ -538,51 +565,48 @@
 
         <p class="list_title bg-main hasPadding c-white fs-14">产品推荐</p>
 
-        <ul class="commend_list">
+        <ul class="plan_commend_list">
             <li>
                 <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h4 class="fs-14 c-33"> <span class="p_name one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</span>  <span  class=" fr c-money" >￥2000</span></h4>
-                </a>
-            </li>
+
+
+
         </ul>
     </div>
-
-
 </div>
 </body>
 
