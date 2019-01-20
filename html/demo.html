@@ -2,16 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>方案</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css">
-    <link rel="stylesheet" type="text/css"  href="../css/common.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <script src="../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css"  href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <script src="../../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="../../css/productList.css">
+    <style>
+        .product_list .plan_list {
+            width: 58.75rem;
+            padding:0 1.875rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #ffffff;
+        }
+        .product_list .plan_list li{
+            height:6.875rem;
+            padding:1.875rem 0;
+            border-bottom: 0.063rem solid #e6e6e6;
+        }
+        .product_list .plan_list li:last-child{
+            border-bottom: none;
+        }
+        .plan_img{
+            width:10rem;
+            height:6.875rem;
+        }
+        .plan_detail{
+            width: 42.5rem;
+            height:6.875rem;
+            position: relative;
+        }
+        .plan_intro{
+            position: absolute;
+            bottom:-0.125rem;
+            left: 0;
+            width: 31.25rem;
+            height:3rem;
+            line-height: 1.5rem;
+        }
+        .plan_info{
+            width: 42.5rem;
+            height:1.875rem;
+            line-height: 1.875rem;
+        }
+        .plan_info .icon_collect{
+            width:1.875rem;
+            height:1.875rem;
+            vertical-align: middle;
+            background: url("../../imgs/purchase_collect_nor.png") no-repeat center center;
+            background-size:1.188rem 1.063rem;
+            margin-left: 1.25rem;
+        }
+        .plan_info .icon_collect.active{
+            background: url("../../imgs/purchase_product_icon_collect.png") no-repeat center center;
+            background-size:1.188rem 1.063rem;
+        }
 
+        .plan_commend_list{
+            width: 13.75rem;
+            overflow: hidden;
+            background: #ffffff;
+            padding: 0 0.625rem 1.25rem;
+        }
+        .plan_commend_list li{
+            padding: 0 0.063rem ;
+            height:2.75rem;
+        }
+        .plan_com_img{
+            width:3.125rem;
+            height:2.75rem;
+            margin-right: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        .plan_com_detail{
+            margin-top: 0.75rem;
+            width:8.75rem;
+            height:3.375rem;
+            border-bottom: 0.063rem solid #e6e6e6;
+        }
+
+    </style>
 </head>
-<body>
+<body class="bg-f4">
 <!--顶部导航-->
 <header class="head_nav bg-nav">
     <div class="w1200 h-f c-white ">
@@ -43,7 +119,7 @@
         <div class="headerCon">
             <h1 class="mallLogo">
                 <a href="#" title="物联网供求平台">
-                    <img src="../imgs/hp_logo.png" height="68" width="194"/>
+                    <img src="../../imgs/hp_logo.png" height="68" width="194"/>
                 </a>
             </h1>
 
@@ -58,10 +134,10 @@
                     <form action="" class="layui-form" novalidate>
                         <i class="layui-icon fl ml-12 layui-icon-search"></i>
                         <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="共享单车">
-                        <button class="layui-btn" style="width:110px;" lay-submit lay-filter="formDemo">搜索</button>
+                        <button class="layui-btn" style="width:6.875rem;" lay-submit lay-filter="formDemo">搜索</button>
                     </form>
                     <p class="or_text fl c-99"> or</p>
-                    <ul class="layui-nav bg-main fr h-f" lay-filter="">
+                    <ul class="layui-nav send_work bg-white fr h-f" lay-filter="">
                         <li class="layui-nav-item">
                             <a href="javascript:;">发布求购</a>
                             <dl class="layui-nav-child">
@@ -83,21 +159,470 @@
                     <li>智能手表</li>
                     <li>智能手表</li>
                 </ul>
-
             </div>
 
         </div>
     </div>
 </div>
 
+<div class="product_nav w1200">
+    <span class="layui-breadcrumb" lay-separator=">">
+      <a href="">企业</a>
+      <a href="">物联网通信</a>
+      <a href="">体育</a>
+    </span>
+</div>
+
+<div class="classify_section w1200 bg-white">
+
+    <div class="classify_head">
+        <p class="fs-14 c-33 fl">已选条件</p>
+        <ul class="fl" >
+            <li>
+                <p class="full">物联网通信</p>
+                <span class="del_icon">x</span>
+            </li>
+            <li>
+                <p class="full">物联网通信</p>
+                <span class="del_icon">x</span>
+            </li>
+            <li>
+                <p class="full">物联网通信</p>
+                <span class="del_icon">x</span>
+            </li>
+            <li>
+                <p class="full">物联网通信</p>
+                <span class="del_icon">x</span>
+            </li>
+            <li>
+                <p class="full">物联网通信</p>
+                <span class="del_icon">x</span>
+            </li>
+        </ul>
+        <span class="fs-14 c-99">清除全部</span>
+    </div>
+    <div class="classify_main">
+
+        <div class="classify_cell">
+            <p class="fl">应用领域</p>
+            <p class="fl c-66">全部</p>
+            <ul class="class_list">
+                <li class="fs-14 c-99"><span class="active">大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+                <li class="fs-14 c-99"><span>大事</span></li>
+            </ul>
+        </div>
+        <div class="classify_cell">
+            <p class="fl">技术领域</p>
+            <p class="fl c-66">全部</p>
+            <ul class="class_list_form layui-form">
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="classify_cell">
+            <p class="fl">高级选项</p>
+            <p class="fl c-66">全部</p>
+            <ul class="class_list_form layui-form">
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="fs-14 c-99">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required" value="0">
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
 
 
-<script type="text/javascript" src="../lib/layui/layui.all.js"></script>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="product_filter w1200 bg-nav">
+    <ul class="filter_list fl">
+        <li class="fs-14 c-33">综合排序</li>
+        <li class="fs-14 c-33">关注人数</li>
+        <li class="fs-14 c-33">收藏率</li>
+        <li class="fs-14 c-33">价格</li>
+    </ul>
+    <div class="price_input_sec fl">
+        <div class="price_input_cell bg-white fl">
+            <lable class="c-33 fs-14">￥</lable>
+            <input type="text" class="price_input c-33">
+        </div>
+        <span class="fs-14 c-99 fl tec hasPadding" style="vertical-align: middle">-</span>
+        <div class="price_input_cell bg-white fl">
+            <lable class="c-33 fs-14" >￥</lable>
+            <input type="text" class="price_input c-33">
+        </div>
+    </div>
+</div>
+
+<div class="product_list_section w1200 ">
+
+    <div class="product_list_item">
+        <div class="product_list">
+            <ul class="plan_list">
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan_img fl">
+                        <img src="../../imgs/b1.jpg" alt="" class="w-f h-f">
+                    </div>
+                    <div class="fr h-f plan_detail">
+                        <div class="plan_info" >
+                            <p class="fl c-main fs-16">急需一个撒适度发放方案</p>
+                            <span class="fl icon_collect active"></span>
+                            <button class=" fr layui-btn layui-btn-xs bg-main" > 立即沟通</button>
+                        </div>
+                        <p class="fs-14 c-money ">￥2000</p>
+                        <p class="plan_intro c-99 fs-14 two_row">暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊暗示的法律上的发技术的立法就是对方奥斯卡的家乐福阿斯蒂芬氨基酸的房间啊</p>
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+            <div class="list_laypage tec" id="list_laypage"></div>
+        </div>
+    </div>
+
+    <div class="product_adv">
+        <a href="">
+            <img class="full" src="../../imgs/product_product_ad1.png" alt="">
+        </a>
+        <a href="">
+            <img class="full" src="../../imgs/product_product_ad2.png" alt="">
+        </a>
+
+        <p class="list_title bg-main hasPadding c-white fs-14">产品推荐</p>
+
+        <ul class="plan_commend_list">
+            <li>
+                <a href="">
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../../imgs/b1.jpg" class="plan_com_img fl" alt="">
+                    <div class="plan_com_detail fl fs-14 c-33 ml-12">
+                        <p class="w-f dib one-row">智能穿戴手表智能穿戴手表智能穿戴手表智能穿戴手表</p>
+                        <p class="c-money" >￥2000</p>
+                    </div>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
 <script>
-    layui.use(['form','element', function(){
+    layui.use(['form','element','laypage'], function(){
         var element = layui.element;
         var form = layui.form;
+        var laypage = layui.laypage;
+
+        form.render();
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'list_laypage' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+        });
     });
 </script>
-</body>
 </html>

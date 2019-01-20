@@ -4,31 +4,31 @@ body{font-family: "Microsoft YaHei", "SimSun", '\5b8b\4f53', sans-serif;  -moz-u
     -ms-user-select: none;
 }
 
-@media screen and (max-width: 1366px) {
-    html,body{
-        font-size:12px;
-    }
-}
-@media (max-width: 1366px) {
-    html,body{
-        font-size:13px;
-    }
-}
-@media (min-width: 1367px) and (max-width: 1680px) {
-    html,body{
-        font-size:14px;
-    }
-}
-@media (min-width: 1681px) and (max-width: 1920px)  {
-    html,body{
-        font-size:16px;
-    }
-}
-@media (min-width: 1921px){
-    html,body{
-        font-size:19px;
-    }
-}
+/*@media screen and (max-width: 1366px) {*/
+    /*html,body{*/
+        /*font-size:12px;*/
+    /*}*/
+/*}*/
+/*@media (max-width: 1366px) {*/
+    /*html,body{*/
+        /*font-size:13px;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 1367px) and (max-width: 1680px) {*/
+    /*html,body{*/
+        /*font-size:14px;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 1681px) and (max-width: 1920px)  {*/
+    /*html,body{*/
+        /*font-size:16px;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 1921px){*/
+    /*html,body{*/
+        /*font-size:19px;*/
+    /*}*/
+/*}*/
 a:hover{
     color: #ffffff;
 }
@@ -75,6 +75,9 @@ a:visited{
 .c-99{
     color: #999999;
 }
+.c-66{
+    color: #666666;
+}
 .c-white{
     color: #ffffff;
 }
@@ -105,12 +108,19 @@ a:visited{
 .mt-8{
     margin-top:0.5rem;
 }
+.ml-10{
+    margin-left: 0.625rem;
+}
 .ml-12{
     margin-left: 0.75rem;
 }
 .mt-46{
     margin-top: 2.875rem;
 }
+.plr-30{
+    padding: 1.875rem 0;
+}
+
 .hasPadding{
     padding: 0 0.75rem;
 }
@@ -133,6 +143,9 @@ a:visited{
 }
 .db{
     display: block;
+}
+.dn{
+    display: none;
 }
 .dib{
     display: inline-block;

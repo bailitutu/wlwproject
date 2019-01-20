@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我发布的求购</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css"  href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <script src="../../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="../../css/personal_center.css">
+    <style>
+
+
+    </style>
+</head>
+<body class="bg-f4">
+<!--顶部导航-->
+<header class="head_nav bg-nav">
+    <div class="w1200 h-f c-white ">
+        <p class="head_index fl h-f">
+            <a href="#" class="c-white">首页</a>
+        </p>
+        <ul class="layui-nav bg-nav fr h-f" lay-filter="">
+            <li class="layui-nav-item"><a href="">请登录</a></li>
+            <li class="layui-nav-item"><a href="">注册</a></li>
+            <li class="layui-nav-item"><a href="">求购</a></li>
+            <li class="layui-nav-item"><a href="">产品</a></li>
+            <li class="layui-nav-item"><a href="">活动</a></li>
+            <li class="layui-nav-item"><a href="">企业</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">网站导航</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+    </div>
+</header>
+
+<div class="head_sec bg-white">
+    <div class="w1200">
+        <div class="headerCon">
+            <h1 class="mallLogo">
+                <a href="#" title="物联网供求平台">
+                    <img src="../../imgs/hp_logo.png" height="68" width="194"/>
+                </a>
+            </h1>
+
+            <div class="search_item fr">
+                <ul class="search_list">
+                    <li class="active">找产品</li>
+                    <li>找产品</li>
+                    <li>找产品</li>
+                    <li>找产品</li>
+                </ul>
+                <div class="mallSearch clear">
+                    <form action="" class="layui-form" novalidate>
+                        <i class="layui-icon fl ml-12 layui-icon-search"></i>
+                        <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="共享单车">
+                        <button class="layui-btn" style="width:6.875rem;" lay-submit lay-filter="formDemo">搜索</button>
+                    </form>
+                    <p class="or_text fl c-99"> or</p>
+                    <ul class="layui-nav send_work bg-white fr h-f" lay-filter="">
+                        <li class="layui-nav-item">
+                            <a href="javascript:;">发布求购</a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="">发布求购</a></dd>
+                                <dd><a href="">发布方案</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="search_tips clear ovh">
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="product_nav w1200 plr-30">
+    <span class="layui-breadcrumb" lay-separator=">">
+      <a href="">企业</a>
+      <a href="">物联网通信</a>
+      <a href="">体育</a>
+    </span>
+</div>
+
+<div class="service_sec w1200">
+    <div class="service_left_list fl">
+        <div class="service_link fs-16 c-33 " style="margin-top: 46px;">
+            个人主页
+        </div>
+        <div class="service_link fs-16 c-33 mt-46 active" style="margin-top: 46px;">
+            我的发布求购
+        </div>
+        <div class="service_list">
+            <h4 class="fs-16 c-33 mt-46">我的收藏</h4>
+            <div class="service_link">企业收藏</div>
+            <div class="service_link">求购收藏</div>
+            <div class="service_link">方案收藏</div>
+            <div class="service_link">产品收藏</div>
+        </div>
+        <div class="service_list">
+            <h4  class="fs-16 c-33 mt-46">我的活动</h4>
+            <div class="service_link">已发布活动</div>
+            <div class="service_link">已报名活动</div>
+            <div class="service_link">已收藏活动</div>
+        </div>
+    </div>
+    <div class="service_right_content fr">
+
+        <div class="right_content">
+
+            <div class="right_header">
+                <h4 class="fs-30 fl c-66">我发布的求购</h4>
+                <button class="work_btn layui-btn layui-btn-sm bg-main c-white fr">发布求购</button>
+                <form class="layui-form fr">
+                    <div class="layui-form-item  right_search ">
+                        <div class="layui-input-inline search_input">
+                            <input type="text" name="" placeholder="标题查询" autocomplete="off" class="layui-input search_input ">
+                            <button class="layui-btn layui-btn-sm fl bg-white">
+                                <i class="layui-icon c-66">&#xe615;</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="right_list clear">
+                <div class="right_list_head">
+                    <span class="w_title">任务标题</span>
+                    <span class="w_span">价格</span>
+                    <span class="w_span ">状态</span>
+                    <span class="w_span">操作</span>
+                </div>
+                <ul >
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                        <div class="list_detail">
+                            <div class="w_content hasPadding c-main one-row">
+                                <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                            </div>
+                            <span class="w_span tec c-money">￥10000</span>
+                            <span class="w_span c-33 tec">成功</span>
+                            <p class="w_span tec">
+                                <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                            </p>
+                        </div>
+                    </li> <li>
+                    <p class="item_time hasPadding fs-12">2019-01-20 23:22:11</p>
+                    <div class="list_detail">
+                        <div class="w_content hasPadding c-main one-row">
+                            <p>是打发了快速的激发了开始交电费卡死的积分阿萨德科技风奥斯卡的积分阿斯顿发家里看书的风景安防阿萨德付款举案说法</p>
+                        </div>
+                        <span class="w_span tec c-money">￥10000</span>
+                        <span class="w_span c-33 tec">成功</span>
+                        <p class="w_span tec">
+                            <button class="layui-btn layui-btn-xs  bg-main c-white">关闭</button>
+                        </p>
+                    </div>
+                </li>
+
+                </ul >
+
+                <div class="list_laypage tec" id="list_laypage"></div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
+<script>
+    layui.use(['form','element','laypage'], function(){
+        var element = layui.element;
+        var form = layui.form;
+        var laypage = layui.laypage;
+
+        form.render();
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'list_laypage' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+        });
+    });
+</script>
+</html>
