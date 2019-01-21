@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*注册头部*/
+.reg_header{
+    height:120px;
+    -webkit-box-shadow: 0px 2px 4px 4px #f4f4f4;
+    -moz-box-shadow: 0px 2px 4px 4px #f4f4f4;
+    box-shadow: 0px 2px 4px 4px #f4f4f4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:33px 0;
+
+}
+.reg_header_left{
+    height: 54px ;
+}
+.reg_header_left h4{
+    padding-left:10px;
+    border-left: 1px solid #ccc;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    font-size: 20px;
+}
+.reg_header_left .logo{
+    height: 54px;
+    width: auto;
+}
+.reg_header_right{
+    line-height: 54px;
+}
+.reg_header_right>p>a:hover,.reg_header_right>p>a:active,.reg_header_right>p>a:visited{
+    color: #0d8df9;
+}
+
+/*注册部分*/
+.reg_tab{
+    width: 480px;
+    margin:100px auto;
+}
+.layui-tab-brief>.layui-tab-title .layui-this{
+    color: #0d8df9;
+}
+.layui-tab-brief>.layui-tab-title .layui-this::after{
+    border-color: #0d8df9;
+}
+.layui-tab-title>li{
+    padding-left:36px;
+    margin:0 40px;
+}
+.layui-form-label{
+    font-size: 12px;
+}
+.layui-tab-title>li:first-child{
+    background: url("../imgs/login_icon_company.png") no-repeat left center;
+    background-size: 20px 20px;
+}
+.layui-tab-title>li:last-child{
+    background: url("../imgs/login_icon_personal.png") no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.layui-form-item{
+    margin-top: 30px;
+}
+.layui-form-item .layui-input-inline.upload_item{
+    width: 120px;
+}
+.layui-form-mid{
+    padding: 0 !important;
+}
+.reg_btn{
+    width:120px;
+}
+
+.yzm_btn{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 1000;
+    background: #999999;
+}
+.label_btn{
+    color: #ffffff;
+    background: #999999;
+    min-width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*注册成功*/
+.reg_success{
+    width: 100%;
+    padding:60px 0;
+}
+.reg_success .success_icon{
+    width: 52px;
+    height: 52px;
+    margin:0 auto;
+}
+.success_btn{
+    width: 200px;
+    margin-top: 40px;
+}

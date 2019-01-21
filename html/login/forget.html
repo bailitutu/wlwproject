@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找回密码</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <script src="../../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="../../css/register.css">
+    <style>
+        .back_sec{
+            width: 480px;
+            margin:100px auto;
+        }
+        .back_title{
+            height:40px;
+            line-height: 40px;
+            position: relative;
+        }
+        .back_title::after{
+            content:'';
+            height: 1px;
+            width: 100px;
+            position: absolute;
+            right: 80px;
+            top:50%;
+            background: #0d8df9;
+        }
+        .back_title::before{
+            content:'';
+            height: 1px;
+            width: 100px;
+            position: absolute;
+            left:80px;
+            top:50%;
+            background: #0d8df9;
+        }
+        .forget_form{
+            width: 400px;
+            margin-left: 20px;
+        }
+        .way_btn{
+            width: 120px;
+            float: left;
+            background: #ffffff;
+            border:1px solid #999999;
+            color: #999999;
+            position: relative;
+            margin-right: 20px;
+        }
+        .way_btn:hover{
+            color: #999999;
+        }
+        .way_btn.active{
+            color: #0d8df9;
+            border-color:#0d8df9;
+        }
+        .way_btn.active::after{
+            content:'';
+            width:14px;
+            height:14px;
+            position: absolute;
+            top: 0;
+            right:0;
+            z-index: 10;
+            background: url("../../imgs/forgetsecret_icon_hig.png") no-repeat center;
+            background-size: 14px;
+        }
+
+        .icon_phone{
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            margin-right: 6px;
+            background: url("../../imgs/forgetsecret_icon_phone.png") no-repeat center ;
+            background-size: 21px;
+            vertical-align: text-top;
+        }
+        .icon_email{
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            margin-right: 6px;
+            background: url("../../imgs/forgetsecret_icon_email.png") no-repeat center ;
+            background-size: 21px;
+            vertical-align: text-top;
+        }
+
+    </style>
+</head>
+<body class="bg-white">
+<!--注册头部-->
+<header class="reg_header">
+    <div class="w1200 bg-white">
+        <div class="reg_header_left fl">
+            <a href="#" title="物联网供求平台">
+                <img src="../../imgs/hp_logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="reg_header_right fr">
+            <p class="fs-14 c-cc">已有账号？<a href="login.html" class="c-main fs-14">去登录</a></p>
+        </div>
+    </div>
+
+</header>
+
+<div class="reg_sec w1200 bg-white">
+
+    <div class="back_sec tec">
+        <div class="back_title c-main fs-18 tec">找回密码</div>
+
+        <!--第一步-->
+
+        <form class="layui-form forget_form" >
+
+
+            <div class="layui-form-item ">
+                <label class="layui-form-label">找回方式</label>
+                <div class="layui-input-block">
+                    <button type="button" class="layui-btn active way_btn"><i class="icon_phone"></i>手机号</button>
+                    <button type="button" class="layui-btn way_btn dn"><i class="icon_email"></i>邮箱</button>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="c-money fs-14">* </span>手机号</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="c-money fs-14">* </span>验证码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    <button  class="layui-btn  c-white yzm_btn " type="button" >获取验证码</button>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn bg-main c-white next_btn w-f" lay-submit lay-filter="formDemo">下一步</button>
+                </div>
+            </div>
+
+
+        </form>
+
+        <!--邮箱对应的UI未给-->
+        <form class="layui-form forget_form dn" >
+
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">找回方式</label>
+                <div class="layui-input-block">
+                    <button type="button" class="layui-btn  way_btn"><i class="icon_phone"></i>手机号</button>
+                    <button type="button" class="layui-btn active way_btn"><i class="icon_email"></i>邮箱</button>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">邮箱</label>
+                <div class="layui-input-block">
+                    <input type="email" name="title" required  lay-verify="required" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="c-money fs-14">* </span>验证码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                    <button  class="layui-btn  c-white yzm_btn " type="button" >获取验证码</button>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn bg-main c-white next_btn w-f" lay-submit lay-filter="formDemo">下一步</button>
+                </div>
+            </div>
+
+
+        </form>
+
+
+        <!--第二部，重置密码-->
+
+        <form class="layui-form forget_form dn" >
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="c-money fs-14">* </span>设置新密码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="c-money fs-14">* </span>确定新密码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn bg-main c-white next_btn w-f" lay-submit lay-filter="">确认修改</button>
+                </div>
+            </div>
+        </form>
+
+        <!--找回成功-->
+        <div class="reg_success tec dn">
+            <div class="success_icon">
+                <img src="../../imgs/login_icon_success.png" class="w-f h-f" alt="">
+            </div>
+            <h4 class="fs-16 c-33 mt-12">恭喜你 ： 12312312312313</h4>
+            <p class="fs-14 c-99 mt-12">你已修改成功</p>
+            <button class="layui-btn bg-main c-white success_btn"  >去登录</button>
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+<script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
+<script>
+    layui.use(['form', 'element','upload'], function () {
+        var element = layui.element,
+            upload = layui.upload,
+            form = layui.form;
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#uploadLogo' //绑定元素
+            ,url: '/upload/' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+    });
+</script>
+
+</html>

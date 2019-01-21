@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物联网</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <script src="../../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="../../css/register.css">
+</head>
+<body class="bg-white">
+    <!--注册头部-->
+    <header class="reg_header">
+        <div class="w1200 bg-white">
+            <div class="reg_header_left fl">
+                <a href="#" title="物联网供求平台">
+                    <img src="../../imgs/hp_logo.png" class="logo"/>
+                </a>
+                <h4 class="c-cc">注册</h4>
+            </div>
+            <div class="reg_header_right fr">
+                <p class="fs-14 c-cc">已有账号？<a href="login.html" class="c-main fs-14">去登录</a></p>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="reg_sec w1200 bg-white">
+        <div class="layui-tab layui-tab-brief reg_tab" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title tec">
+                <li class="layui-this c-33">企业账户注册</li>
+                <li class="c-33">个人账户注册</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <!--企业注册-->
+                    <form class="layui-form dn" >
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>公司名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入公司名称" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">公司简介</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="title" required  lay-verify="required" placeholder="请输入公司简介" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>主营区域</label>
+                            <div class="layui-input-block">
+                                <select name="city" lay-verify="required">
+                                    <!--<option value=""></option>-->
+                                    <option value="0">北京</option>
+                                    <option value="1">上海</option>
+                                    <option value="2">广州</option>
+                                    <option value="3">深圳</option>
+                                    <option value="4">杭州</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>LOGO</label>
+                            <div class="layui-input-inline upload_item">
+                                <button class="layui-btn label_btn" lay-submit lay-filter="formDemo" id="uploadLogo">上传图片</button>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux c-99"><p class="fs-12 c-33  ">尚未选择图片</p>  尺寸最大不超过100k</div>
+                        </div>
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>网址</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入公司网址" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>公司地址</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入公司地址" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>固定电话</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入固定电话" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">企业公众号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入企业公众号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>LOGO</label>
+                            <div class="layui-input-inline upload_item">
+                                <button class="layui-btn label_btn" lay-submit lay-filter="formDemo" id="uploadPapers">上传图片</button>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux c-99"><p class="fs-12 c-33  ">尚未选择图片</p>  尺寸最大不超过100k</div>
+
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>企业联系人</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入企业联系人称呼" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>联系人名片照片</label>
+                            <div class="layui-input-inline upload_item">
+                                <button class="layui-btn label_btn" lay-submit lay-filter="formDemo" id="uploadHead">上传图片</button>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux c-99"><p class="fs-12 c-33  ">尚未选择图片</p>  尺寸最大不超过100k</div>
+
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">企业简介</label>
+                            <div class="layui-input-block">
+                                <textarea name="desc" placeholder="请输入公司介绍（不少于50字）" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>企业banner</label>
+                            <div class="layui-input-inline upload_item">
+                                <button class="layui-btn label_btn" lay-submit lay-filter="formDemo" id="uploadBanner">上传图片</button>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux c-99"><p class="fs-12 c-33  ">尚未选择图片</p>  尺寸最大不超过100k</div>
+
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>联系方式</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>验证码</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                                <button  class="layui-btn  c-white yzm_btn " type="button" >获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn bg-main c-white reg_btn" lay-submit lay-filter="formDemo">注册</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--注册成功-->
+                    <div class="reg_success tec">
+                        <div class="success_icon">
+                            <img src="../../imgs/login_icon_success.png" class="w-f h-f" alt="">
+                        </div>
+                        <h4 class="fs-16 c-33 mt-12">恭喜你 ： 12312312312313</h4>
+                        <p class="fs-14 c-99 mt-12">你已成功注册</p>
+
+                        <p class="fs-14 c-main mt-46">审核需要3个工作日</p>
+                        <p class="fs-14 c-33 mt-8">审核情况会以短信形式通知，请注意查收</p>
+                        <button class="layui-btn bg-main c-white success_btn"  >我知道了</button>
+                    </div>
+
+                </div>
+                <div class="layui-tab-item ">
+                    <form class="layui-form dn" >
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>用户名</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>设置密码</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="title" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>确认密码</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="title" required  lay-verify="required" placeholder="请重新输入密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>手机号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="c-money fs-14">* </span>验证码</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                <button  class="layui-btn  c-white yzm_btn " type="button" >获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn bg-main c-white reg_btn" lay-submit lay-filter="formDemo">注册</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    <!--注册成功-->
+                    <div class="reg_success tec">
+                        <div class="success_icon">
+                            <img src="../../imgs/login_icon_success.png" class="w-f h-f" alt="">
+                        </div>
+                        <h4 class="fs-16 c-33 mt-12">恭喜你 ： 12312312312313</h4>
+                        <p class="fs-14 c-99 mt-12">你已成功注册</p>
+                        <button class="layui-btn bg-main c-white success_btn"  >去登录</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
+<script>
+    layui.use(['form', 'element','upload'], function () {
+        var element = layui.element,
+            upload = layui.upload,
+            form = layui.form;
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#uploadLogo' //绑定元素
+            ,url: '/upload/' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+    });
+</script>
+
+</html>
