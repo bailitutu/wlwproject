@@ -120,7 +120,7 @@
                 <p class="p_tips fs-14 c-99">圣诞快乐发斯蒂芬骄傲了的水库附近</p>
                 <p class="price fs-22 c-money">￥30000</p>
                 <div class="btn_item">
-                    <button class="layui-btn bg-main c-white">立即咨询</button>
+                    <button class="layui-btn bg-main c-white" id="connect_btn">立即咨询</button>
                     <button class="layui-btn  c-white collect_btn"><i class="layui-icon collect_icon"></i><i class="layui-icon collect_icon active"></i>添加收藏</button>
                 </div>
             </div>
@@ -238,6 +238,41 @@
 </div>
 
 
+<!--咨询窗口-->
+
+<div id="connect_popup" class="connect_popup hasPadding">
+    <form action="" class="layui-form">
+        <div class="layui-form-item mt-12">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input collect_input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+                <select name="city" lay-verify="required">
+                    <option value="0" selected>男</option>
+                    <option value="1">女</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input collect_input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">留言</label>
+            <div class="layui-input-block">
+                <textarea name="desc" placeholder="请输入内容"  class="layui-textarea collect_area"></textarea>
+            </div>
+        </div>
+
+    </form>
+</div>
+
 </body>
 
 <script src="../../lib/script/jquery-1.10.min.js"></script>
@@ -245,9 +280,31 @@
 <script src="../../lib/script/base.js"></script>
 <script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
 <script>
-    layui.use(['form','element'], function(){
+    layui.use(['form','element','layer'], function(){
         var element = layui.element;
         var form = layui.form;
+        var layer = layui.layer;
+
+
+        $('#connect_btn').on('click', function () {
+            layer.open({
+                type: 1,
+                title: '工作室',
+                area: ['350px', '420px'],
+                content: $('#connect_popup'),
+                btn: ['确认发送', '取消'],
+                btnAlign: 'c',
+                yes: function (index, layero) {
+
+
+                }
+                , btn2: function (index, layero) {
+                    //按钮【按钮二】的回调
+                }
+
+            });
+        })
+
     });
 </script>
 </html>

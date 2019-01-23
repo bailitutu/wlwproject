@@ -114,11 +114,23 @@ a:visited{
 .ml-12{
     margin-left: 0.75rem;
 }
+.mt-30{
+    margin-top: 30px;
+}
 .mt-46{
     margin-top: 2.875rem;
 }
+.mb-60{
+    margin-bottom: 60px;
+}
 .plr-30{
     padding: 1.875rem 0;
+}
+.ptb-30{
+    padding: 0 1.875rem;
+}
+.p30{
+    padding: 1.875rem;
 }
 
 .hasPadding{
@@ -167,6 +179,11 @@ a:visited{
 }
 .h-f{
     height: 100%;
+}
+.border-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .one-row{
     overflow: hidden;

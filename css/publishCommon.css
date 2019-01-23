@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.product_nav{
+    padding:1.875rem 0;
+}
+.publish_title{
+    padding: 30px;
+    font-size: 20px;
+}
+.sec_title{
+    height: 52px;
+    line-height: 52px;
+}
+.form_item{
+    padding: 30px;
+}
+.upload_btn_box{
+    width: 200px;
+    height: 160px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+}
+.upload_btn_box .upload_btn{
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding:0;
+    margin: 54px 0 0;
+    background: url("../imgs/issue_icon_add.png") no-repeat center center;
+    background-size: 30px 30px;
+
+}
+.upload_cell{
+    margin-right: 12px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.upload_cell img{
+    width: 200px;
+    height: 160px;
+    border:1px solid #e6e6e6;
+}
+.upload_cell .icon_del{
+    position: absolute;
+    top:1px;
+    right:1px;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    padding:0;
+    line-height: 24px;
+    text-align: center;
+    border:none;
+}
+.upload_cell .icon_del .layui-icon{
+    margin-right: 0;
+}
+.upload_tips{
+    height: 40px;
+    line-height: 40px;
+}
+.layui-form-label span{
+    vertical-align: middle;
+}
+.time_line{
+    float: left;
+    height:38px;
+    line-height: 38px;
+    margin-right: 10px;
+}

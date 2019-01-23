@@ -187,3 +187,17 @@
     text-align: right;
     width:3.75rem;
 }
+
+.collect_area{
+    height:120px;
+    resize:none;
+}
+.layui-form-label{
+    width: 60px;
+}
+.connect_popup{
+    padding:0 20px;
+}
+.layui-input-block{
+    margin-left: 90px;
+}

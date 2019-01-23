@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布方案</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <script src="../../lib/script/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="../../css/publishCommon.css">
+</head>
+<body class="bg-f4">
+<!--顶部导航-->
+<header class="head_nav bg-nav">
+    <div class="w1200 h-f c-white ">
+        <p class="head_index fl h-f">
+            <a href="#" class="c-white">首页</a>
+        </p>
+        <ul class="layui-nav bg-nav fr h-f" lay-filter="">
+            <li class="layui-nav-item"><a href="">请登录</a></li>
+            <li class="layui-nav-item"><a href="">注册</a></li>
+            <li class="layui-nav-item"><a href="">求购</a></li>
+            <li class="layui-nav-item"><a href="">产品</a></li>
+            <li class="layui-nav-item"><a href="">活动</a></li>
+            <li class="layui-nav-item"><a href="">企业</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">网站导航</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+    </div>
+</header>
+
+<div class="head_sec bg-white">
+    <div class="w1200">
+        <div class="headerCon">
+            <h1 class="mallLogo">
+                <a href="#" title="物联网供求平台">
+                    <img src="../../imgs/hp_logo.png" class="logo"/>
+                </a>
+            </h1>
+
+            <div class="search_item fr">
+                <ul class="search_list">
+                    <li class="active">找产品</li>
+                    <li>找产品</li>
+                    <li>找产品</li>
+                    <li>找产品</li>
+                </ul>
+                <div class="mallSearch clear">
+                    <form action="" class="layui-form" novalidate>
+                        <i class="layui-icon fl ml-12 layui-icon-search"></i>
+                        <input type="text" name="title" required lay-verify="required" autocomplete="off"
+                               class="layui-input" placeholder="共享单车">
+                        <button class="layui-btn" style="width:110px;" lay-submit lay-filter="formDemo">搜索</button>
+                    </form>
+                    <p class="or_text fl c-99"> or</p>
+                    <ul class="layui-nav bg-main fr h-f" lay-filter="">
+                        <li class="layui-nav-item">
+                            <a href="javascript:;">发布求购</a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="">发布求购</a></dd>
+                                <dd><a href="">发布方案</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="search_tips clear ovh">
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                    <li>智能手表</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="product_nav w1200">
+    <span class="layui-breadcrumb" lay-separator=">">
+      <a href="">企业</a>
+      <a href="">物联网通信</a>
+      <a href="">体育</a>
+    </span>
+</div>
+
+<div class="publish_title border-box w1200 bg-white   c-main">
+    发布方案
+</div>
+<form class="layui-form w1200 ">
+
+    <div class="bg-white  w-f mt-30">
+        <p class="sec_title c-33 fs-13 ptb-30 bb-e6">产品方案</p>
+        <div class="border-box form_item">
+            <div class="layui-form-item  mt-30">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>产品名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入产品名称" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item mt-30">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>产品类型</label>
+                <div class="layui-input-inline">
+                    <select name="quiz1">
+                        <option value="">应用领域</option>
+                        <option value="浙江">浙江省</option>
+                        <option value="你的工号">江西省</option>
+                        <option value="你最喜欢的老师">福建省</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="quiz2">
+                        <option value="">技术领域</option>
+                        <option value="杭州">杭州</option>
+                        <option value="宁波" >宁波</option>
+                        <option value="温州">温州</option>
+                        <option value="温州">台州</option>
+                        <option value="温州">绍兴</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="quiz3">
+                        <option value="">其他领域</option>
+                        <option value="西湖区">西湖区</option>
+                        <option value="余杭区">余杭区</option>
+                        <option value="拱墅区">临安市</option>
+                    </select>
+                </div>
+
+
+                <div class="layui-inline">
+                    <label class="layui-form-label"><span class="c-money fs-16">*</span>方案价格</label>
+                    <div class="layui-input-inline">
+                        <input type="number" name="phone" placeholder="￥" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text mt-30">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>方案简介</label>
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入方案简介" class="layui-textarea" name="desc"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white  w-f mt-30">
+        <p class="sec_title c-33 fs-13 ptb-30 bb-e6">上传封面图</p>
+        <div class="border-box form_item">
+            <div class="layui-form-item  ">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>产品名称</label>
+                <div class="layui-input-block ">
+                    <p class="upload_tips fs-12 c-99">格式说明 阿萨德发生的发</p>
+                    <div class="layui-upload-list">
+                        <div class="upload_cell fl ">
+                            <div class="upload_btn_box dn">
+                                <button type="button" class="layui-btn upload_btn" ></button>
+                                <p class="fs-14 c-66 mt-8">点击添加封面图片</p>
+                            </div>
+                            <img  src="../../imgs/productdetail_head_image.png" >
+                            <button class="layui-btn layui-btn-sm layui-btn-primary icon_del">
+                                <i class="layui-icon c-money ">&#xe640;</i>
+                            </button>
+                        </div>
+                        <div class="upload_cell fl ">
+                            <div class="upload_btn_box dn">
+                                <button type="button" class="layui-btn upload_btn" ></button>
+                                <p class="fs-14 c-66 mt-8">点击添加封面图片</p>
+                            </div>
+                            <img  src="../../imgs/productdetail_head_image.png" >
+                            <button class="layui-btn layui-btn-sm layui-btn-primary icon_del">
+                                <i class="layui-icon c-money ">&#xe640;</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white  w-f mt-30">
+        <p class="sec_title c-33 fs-13 ptb-30 bb-e6">方案详情</p>
+        <div class="border-box form_item">
+            <div class="layui-form-item  ">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>上传图片</label>
+                <div class="layui-input-block ">
+                    <p class="upload_tips fs-12 c-99">格式说明 阿萨德发生的发</p>
+                    <div class="layui-upload-list">
+                        <div class="upload_cell fl ">
+                            <div class="upload_btn_box dn">
+                                <button type="button" class="layui-btn upload_btn" ></button>
+                                <p class="fs-14 c-66 mt-8">点击添加封面图片</p>
+                            </div>
+                            <img  src="../../imgs/productdetail_head_image.png" >
+                        </div>
+                        <div class="upload_cell fl ">
+                            <div class="upload_btn_box ">
+                                <button type="button" class="layui-btn upload_btn"></button>
+                                <p class="fs-14 c-66 mt-8">点击添加封面图片</p>
+                            </div>
+                            <img  src="../../imgs/productdetail_head_image.png" class="dn" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-form-item layui-form-text mt-30">
+                <label class="layui-form-label"><span class="c-money fs-16">*</span>方案说明</label>
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入方案简介" class="layui-textarea" style="display: none;" id="planRec" name="desc"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-f mt-30 mb-60">
+        <div class="layui-form-item complain_commit">
+            <div class="layui-input-block">
+                <button class="layui-btn bg-main c-white" lay-submit lay-filter="formDemo">发布方案</button>
+                <button class="layui-btn layui-btn-primary" lay-submit lay-filter="formDemo">保存</button>
+            </div>
+        </div>
+    </div>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
+<script>
+    layui.use(['form', 'element','layedit'], function () {
+        var element = layui.element,
+            layedit = layui.layedit,
+            form = layui.form;
+
+        layedit.build('planRec'); //建立编辑器
+
+    });
+</script>
+
+</html>
