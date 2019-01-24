@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.footer{
+    padding:  36px 0 26px;
+}
+.footer div a, .footer div a:hover, .footer div a:visited, .footer div a:active{
+    color: #777777;
+    height:30px;
+    line-height: 30px;
+    display: inline-block;
+    padding:0 23px;
+    text-align: center;
+}
+.footer>p{
+    color: #777777;
+}
