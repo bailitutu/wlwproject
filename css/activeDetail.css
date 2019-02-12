@@ -91,3 +91,19 @@
     background: url("../imgs/product_product_icon_collect.png") no-repeat center;
     background-size:1rem 0.938rem;
 }
+
+
+/*报名弹窗*/
+.collect_area{
+    height:120px;
+    resize:none;
+}
+.layui-form-label{
+    width: 60px;
+}
+.connect_popup{
+    padding:0 20px;
+}
+.layui-input-block{
+    margin-left: 90px;
+}

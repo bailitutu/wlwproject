@@ -107,7 +107,7 @@
                 <p class="fs-14 c-33"><span class="c-99">主办单位:</span> 水电开发骄傲受到了看风景暗示对方啊地方按时到了看风景啊啊剪短发  </p>
 
                 <div class="btn_item">
-                    <button class="layui-btn layui-btn-sm bg-main c-white" >我要报名</button>
+                    <button class="layui-btn layui-btn-sm bg-main c-white" id="enroll_btn" >我要报名</button>
                     <button class="layui-btn  c-white collect_btn"><i class="layui-icon collect_icon"></i><i class="layui-icon collect_icon active"></i>添加收藏</button>
                 </div>
             </div>
@@ -135,14 +135,54 @@
 
 
 </div>
+
+
+<!--报名弹窗-->
+<div id="enroll_popup" class="connect_popup hasPadding">
+    <form action="" class="layui-form">
+        <div class="layui-form-item mt-12">
+            <label class="layui-form-label">您的称呼</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input collect_input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号码</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input collect_input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">留言</label>
+            <div class="layui-input-block">
+                <textarea name="desc" placeholder="请输入内容"  class="layui-textarea collect_area"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label"></label>
+            <div class="layui-input-inline"  style="width:auto;margin-right:0;">
+                <input type="checkbox" name="agree"  lay-skin="primary" title="我已阅读并同意" checked="">
+            </div>
+            <div class="layui-form-mid  c-main">《全球加盟网服务条款》</div>
+        </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block" >
+                <div class="fs-12 c-money">为了您的权益，您的隐私将被严格保密</div>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 
 <script type="text/javascript" src="../../lib/layui/layui.all.js"></script>
 <script>
-    layui.use(['form','element','laypage'], function(){
-        var element = layui.element;
-        var form = layui.form;
-        var laypage = layui.laypage;
+    layui.use(['form','element','laypage','layer','jquery'], function(){
+        var element = layui.element,
+         form = layui.form,
+        laypage = layui.laypage,
+        $ = layui.jquery,
+        layer = layui.layer;
 
         form.render();
         //执行一个laypage实例
@@ -150,6 +190,26 @@
             elem: 'list_laypage' //注意，这里的 test1 是 ID，不用加 # 号
             ,count: 50 //数据总数，从服务端得到
         });
+
+        $('#enroll_btn').on('click', function () {
+            layer.open({
+                type: 1,
+                title: '我要报名',
+                area: ['550px', '460px'],
+
+                content: $('#enroll_popup'),
+                btn: ['确认报名', '取消'],
+                btnAlign: 'c',
+                yes: function (index, layero) {
+
+
+                }
+                , btn2: function (index, layero) {
+                    //按钮【按钮二】的回调
+                }
+
+            });
+        })
     });
 </script>
 </html>
