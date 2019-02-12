@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .footer{
+    clear:both;
     padding:  36px 0 26px;
 }
 .footer div a, .footer div a:hover, .footer div a:visited, .footer div a:active{
