@@ -2,6 +2,9 @@
 .head_nav{
     height: 2.5rem;
     width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10000000;
 }
 .head_index{
     line-height: 2.5rem;

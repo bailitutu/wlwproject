@@ -196,6 +196,9 @@
     color: #999999;
     font-size:1rem;
 }
+.detail_list li a:hover{
+    color: #0d8df9;
+}
 .classify_detail .banner_item{
     margin-top: 1.875rem;
 }
