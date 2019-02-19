@@ -14,7 +14,16 @@
     height:0.25rem;
 }
 .layui-nav-child{
-    top:2.813rem;
+    top:2.533rem;
+    width: 8.4rem;
+    left: -1.333rem;
+}
+.layui-nav .layui-nav-child a{
+    text-align: center;
+}
+.layui-nav .layui-nav-child a:hover{
+    background-color: #2a3e63;
+    color: #ffffff;
 }
 .head_sec{height: 8.75rem; padding-top:5rem;}
 .head_sec .mallLogo{margin-left: 2.375rem; float: left;}
@@ -62,7 +71,7 @@
     line-height: 2rem;
 }
 .send_work.layui-nav{
-    border:2px solid #0d8df9;
+    border:0.133rem solid #0d8df9;
 }
 .send_work.layui-nav .layui-nav-item a {
     color: #0d8df9;

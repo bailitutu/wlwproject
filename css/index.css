@@ -124,6 +124,9 @@
     color: #333333;
     font-weight:bold;
 }
+.classify_list_left>ul>li>h4:hover{
+    color: #0d8df9;
+}
 .classify_list_left>ul>li>p{
     height:1.5rem;
     white-space: nowrap;
@@ -136,6 +139,9 @@
     padding:0.125rem 0.25rem;
     font-size:0.75rem;
     color: #999999;
+}
+.classify_list_left>ul>li>p>a:hover{
+    color: #0d8df9;
 }
 .classify_list_left>ul>li:last-child h4{
     height:2.625rem;

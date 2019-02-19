@@ -88,11 +88,17 @@
     width: 56.25rem;
     border-bottom: 0.063rem solid #f0f0f0;
 }
+.classify_cell:last-child .class_list_form{
+    border-bottom: none;
+}
 .layui-form-item .layui-input-inline{
     width:7.25rem;
 }
 .layui-input-inline .layui-input{
     border:none;
+}
+.layui-form-select dl dd.layui-this{
+    background-color:#a5d6ff;
 }
 
 /*过滤*/
@@ -143,6 +149,9 @@
 .product_list .layui-col-md3:nth-of-type(4n){
     margin-right: 0;
 }
+.product_list .layui-col-md3 .product_info{
+    margin-top: 6px;
+}
 .product_list .layui-col-md3 img{
     width: 13.75rem;
     height: 13.75rem;
@@ -181,7 +190,7 @@
 
 /*调整分页*/
 .list_laypage{
-    margin-top: 1.875rem;
+    margin: 1.875rem 0;
 }
 .layui-laypage .layui-laypage-curr .layui-laypage-em{
     background-color: #0d8df9;

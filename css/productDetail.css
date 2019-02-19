@@ -113,7 +113,10 @@
     height: 3.75rem;
     margin:0 1.875rem;
     background: #fff;
-
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top:0.933rem;
 }
 .btn-box button{
     width: 4.375rem;
@@ -189,15 +192,15 @@
 }
 
 .collect_area{
-    height:120px;
+    height:8rem;
     resize:none;
 }
 .layui-form-label{
-    width: 60px;
+    width: 4rem;
 }
 .connect_popup{
-    padding:0 20px;
+    padding:0 1.333rem;
 }
 .layui-input-block{
-    margin-left: 90px;
+    margin-left: 6rem;
 }
