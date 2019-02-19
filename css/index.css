@@ -94,6 +94,9 @@
     font-weight:bold;
     color: #333333;
 }
+.classify_head ul li:hover{
+    color: #0d8df9;
+}
 .classify_head ul li:first-child {
     width: 8.75rem;
     color: #fff;
@@ -116,8 +119,11 @@
 }
 .classify_list_left>ul>li{
     height: 2.625rem;
-    padding:0.5rem 1.25rem 0;
+    padding:0.5rem 1.25rem 1px;
     text-align: center;
+}
+.classify_list_left>ul>li:hover {
+    background-color: #E6E6E6;
 }
 .classify_list_left>ul>li>h4{
     font-size:0.875rem;
@@ -257,6 +263,9 @@
     float: left;
     margin-left: 0.938rem;
     margin-bottom: 1.25rem;
+}
+.right_main_list .main_list ul li .list_info{
+    margin-top: 10px;
 }
 
 .right_main_list .main_list ul li img {
