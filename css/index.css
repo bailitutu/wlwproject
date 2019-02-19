@@ -267,15 +267,15 @@
     margin-left: 0.938rem;
     margin-bottom: 1.25rem;
 }
-.right_main_list .main_list ul li .list_info{
-    margin-top: 10px;
-}
+
 
 .right_main_list .main_list ul li img {
     width: 14.063rem;
     height: 12.5rem;
 }
-
+.right_main_list .main_list ul li .list_info{
+    margin-top: 8px;
+}
 /*合作企业*/
 .company_list {
     padding: 2.875rem 0 5rem;
